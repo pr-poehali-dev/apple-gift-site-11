@@ -1,7 +1,7 @@
-
 import { Link } from "react-router-dom";
 import { Card, CardHeader, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Header from "@/components/Header";
 
 const giftCards = [
   {
@@ -31,22 +31,13 @@ const Products = () => {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Навигация */}
-      <header className="border-b border-gray-200 bg-white">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <Link to="/" className="text-xl font-medium">Apple Gift Card</Link>
-          <nav className="flex gap-6">
-            <Link to="/" className="text-sm hover:text-gray-600">Главная</Link>
-            <Link to="/products" className="text-sm hover:text-gray-600">Карты</Link>
-            <Link to="/instructions" className="text-sm hover:text-gray-600">Инструкция</Link>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       {/* Основной контент */}
       <main className="flex-1 bg-gray-50 py-12">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-12">Выберите номинал</h1>
-          
+           
           <div className="grid md:grid-cols-3 gap-8">
             {giftCards.map((card) => (
               <Card key={card.id} className="overflow-hidden shadow-sm hover:shadow-md transition-shadow">
@@ -70,7 +61,7 @@ const Products = () => {
               </Card>
             ))}
           </div>
-          
+           
           <div className="mt-16 text-center bg-white p-8 rounded-lg shadow-sm">
             <h2 className="text-2xl font-bold mb-4">Информация о покупке</h2>
             <p className="text-gray-600 mb-4">

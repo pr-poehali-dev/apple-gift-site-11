@@ -1,20 +1,12 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import Header from "@/components/Header";
 
 const Index = () => {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Навигация */}
-      <header className="border-b border-gray-200 bg-white">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <Link to="/" className="text-xl font-medium">Apple Gift Card</Link>
-          <nav className="flex gap-6">
-            <Link to="/" className="text-sm hover:text-gray-600">Главная</Link>
-            <Link to="/products" className="text-sm hover:text-gray-600">Карты</Link>
-            <Link to="/instructions" className="text-sm hover:text-gray-600">Инструкция</Link>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero секция с большим изображением Apple */}
       <section className="relative h-[80vh] overflow-hidden bg-black">
