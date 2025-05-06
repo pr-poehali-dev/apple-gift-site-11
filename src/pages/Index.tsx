@@ -7,6 +7,9 @@ const Index = () => {
     <div className="flex flex-col min-h-screen">
       {/* Навигация */}
       <Header />
+      
+      {/* Отступ для фиксированного хедера */}
+      <div className="pt-16"></div>
 
       {/* Hero секция с большим изображением Apple */}
       <section className="relative h-[80vh] overflow-hidden bg-black">

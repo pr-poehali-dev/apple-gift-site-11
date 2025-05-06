@@ -32,12 +32,15 @@ const Products = () => {
     <div className="flex flex-col min-h-screen">
       {/* Навигация */}
       <Header />
+      
+      {/* Отступ для фиксированного хедера */}
+      <div className="pt-16"></div>
 
       {/* Основной контент */}
       <main className="flex-1 bg-gray-50 py-12">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-12">Выберите номинал</h1>
-           
+            
           <div className="grid md:grid-cols-3 gap-8">
             {giftCards.map((card) => (
               <Card key={card.id} className="overflow-hidden shadow-sm hover:shadow-md transition-shadow">
@@ -61,7 +64,7 @@ const Products = () => {
               </Card>
             ))}
           </div>
-           
+            
           <div className="mt-16 text-center bg-white p-8 rounded-lg shadow-sm">
             <h2 className="text-2xl font-bold mb-4">Информация о покупке</h2>
             <p className="text-gray-600 mb-4">
@@ -74,7 +77,7 @@ const Products = () => {
           </div>
         </div>
       </main>
-
+      
       {/* Подвал */}
       <footer className="bg-gray-50 border-t border-gray-200 py-8">
         <div className="container mx-auto px-4 text-center text-sm text-gray-500">
