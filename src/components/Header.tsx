@@ -1,5 +1,5 @@
-]=import { Link } from "react-router-dom";
-import Icon from "@/components/ui/Icon";
+import { Link } from "react-router-dom";
+import Icon from "@/components/ui/icon";
 
 const Header = () => {
   return (
