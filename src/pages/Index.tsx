@@ -14,7 +14,7 @@ const Index = () => {
       {/* Hero секция с большим изображением Apple */}
       <section className="relative h-[80vh] overflow-hidden bg-black">
         <img 
-          src="https://images.unsplash.com/photo-1591815302525-756a9bcc3425?q=80&w=2000&auto=format&fit=crop" 
+          src="https://wallpapers.com/images/featured/4k-apple-background-sa57k6lhqn2nep0i.jpg" 
           alt="Apple premium" 
           className="w-full h-full object-cover opacity-90"
         />
@@ -35,17 +35,17 @@ const Index = () => {
           <h2 className="text-3xl font-bold text-center mb-16">Почему выбирают наши карты</h2>
           <div className="grid md:grid-cols-3 gap-12">
             <div className="text-center p-6">
-              <div className="text-4xl mb-6">🔒</div>
+              <div className="text-4xl mb-6">✀</div>
               <h3 className="text-xl font-semibold mb-3">Безопасно</h3>
               <p className="text-gray-600">Мгновенная активация и защищенные коды для максимальной безопасности ваших покупок</p>
             </div>
             <div className="text-center p-6">
-              <div className="text-4xl mb-6">⚡</div>
+              <div className="text-4xl mb-6">✊</div>
               <h3 className="text-xl font-semibold mb-3">Быстро</h3>
               <p className="text-gray-600">Получение кода сразу после оплаты — никаких задержек и ожиданий</p>
             </div>
             <div className="text-center p-6">
-              <div className="text-4xl mb-6">🎁</div>
+              <div className="text-4xl mb-6">✋</div>
               <h3 className="text-xl font-semibold mb-3">Универсально</h3>
               <p className="text-gray-600">Используйте для всех сервисов Apple: App Store, Apple Music, iCloud и многих других</p>
             </div>
